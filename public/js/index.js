@@ -1,5 +1,5 @@
 var id = getParameterByName("id");
-var getUrl = "http://reservation.taxagdl.com/?id="+id+"&access_token=64bca3d3295f58d6234db35bb91dd446a331bf18";
+var getUrl = "https://taxa-reservation-staging.herokuapp.com/?id="+id+"&access_token=64bca3d3295f58d6234db35bb91dd446a331bf18";
 
 var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
@@ -54,7 +54,7 @@ function setDateValues(date) {
 }
 
 function confirm(id) {
-  var updateUrl = "http://assignment.taxagdl.com";
+  var updateUrl = "https://taxa-assignment-staging.herokuapp.com";
   var parameters = "id="+id+"&status=confirmed";
   var request = new XMLHttpRequest();
 
